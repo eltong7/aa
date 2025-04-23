@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clientes - Dashboard</title>
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <main class="flex">
+    <div class="sidebar">
+        <header class="flex center logo-header">
+            <img src="assets/iconlogo.png" class="logo-img" alt="Logo">
+        </header>
+        <nav class="nav-menu">
+            <ul>
+                <li><i class="fa-solid fa-table-cells-large"></i><span>Dashboard</span></li>
+                <li><i class="fa-solid fa-camera"></i><span>Social Media</span></li>
+                <li><i class="fa-solid fa-paper-plane"></i><span>Campanhas</span></li>
+                <li><i class="fa-solid fa-chart-pie"></i><span>Gráficos</span></li>
+                <li><i class="fa-solid fa-file-contract"></i><span>Contratos</span></li>
+            </ul>
+        </nav>
+        <div class="footer-menu">
+            <li class="active"><i class="fa-solid fa-user-group"></i><span>Clientes</span></li>
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-user flex center">
+            <section class="flex center">
+                <i class="fa-solid fa-bell"></i>
+            </section>
+            <section class="user flex">
+                <section>
+                    <h4 id="nomeUser">Icon Marketing</h4>
+                    <p id="emailUser">iconmarketing@gmail.com</p>
+                </section>
+                <section class="flex center">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </section>
+            </section>
+        </div>
+
+        <div class="resource">
+            <h1 style="font-size: 48px; margin: 20px 0;">Clientes</h1>
+
+            <div class="top-bar flex center">
+                <div class="search-bar flex center">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Pesquisar" />
+                </div>
+                <button class="add-btn"><i class="fa fa-user-plus"></i> Add Cliente</button>
+            </div>
+
+            <div class="content">
+                <div class="card clientes-box" style="grid-column: span 3;">
+                    <div class="table-header">
+                        <span>Cliente</span>
+                        <span>CNPJ</span>
+                        <span>Status</span>
+                    </div>
+                    <div class="table-row">
+                        <div class="cliente">
+                            <strong>Nome Cliente</strong>
+                            <small>Nome Fantasia</small>
+                        </div>
+                        <div class="cnpj">XX.XXX.XXX/0001-XX</div>
+                        <div class="status ativo">Ativo</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="cliente">
+                            <strong>Nome Cliente</strong>
+                            <small>Nome Fantasia</small>
+                        </div>
+                        <div class="cnpj">XX.XXX.XXX/0001-XX</div>
+                        <div class="status inativo">Inativo</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+</body>
+</html>
